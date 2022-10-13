@@ -1,25 +1,22 @@
 {
-  "name": "mvc-tech-blog",
+  "name": "wordsmith",
   "version": "1.0.0",
-  "description": "This project uses the Model-View-Controller (MVC) paradigm to create a blog-style website where developers can post articles with commentary, edit posts, and comment on other user's articles.",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "test": "test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kpehl/mvc-tech-blog.git"
+    "url": "git+https://github.com/Noahbrown26/WordSmith.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Noah Brown",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kpehl/mvc-tech-blog/issues"
+    "url": "https://github.com/Noahbrown26/WordSmith/issues"
   },
-  "homepage": "https://github.com/kpehl/mvc-tech-blog#readme",
+  "homepage": "https://github.com/Noahbrown26/WordSmith#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
