@@ -81,6 +81,38 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
+
+router.post("/post", withAuth, async (req, res) => {
+  try {
+      const postData = await Post.create({
+          title: req.body.title,
+          content: req.body.content,
+          user_id: req.session.user_id
+      });
+      const post = postData.get({ plain: true });
+      if (postData) {
+          res.status(201).json({ id: post.id });
+      } else {
+          res.status(500).json({ message: "There was an error while creating the post" });
+      }
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
+
+router.get('/create', async (req, res) => {
+  try {
+     res.render('create-post', {
+    loggedIn: req.session.loggedIn,
+  });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+
 // A route to edit the logged in user //
 router.get('/edituser', withAuth, (req, res) => {
   User.findOne({
