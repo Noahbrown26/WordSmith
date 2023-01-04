@@ -18,7 +18,7 @@ Currently the submit post button is not functional but am working to fix it as s
   
   
 ## Usage
-You can view the deployed application [here](#)
+You can view the deployed application [here](https://wordsmith-1-0-0.herokuapp.com/)
 
 ![](./assets/images/demo.PNG)
   
